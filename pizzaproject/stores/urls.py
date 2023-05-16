@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [ 
     path('', views.PizzeriaListAPIView.as_view(), name="pizzeria_list"), 
-    path('<int:id>/', views.PizzeriaRetrieveAPIView.as_view(), name='pizzeria_retrieve'),
+    path('<int:id>/', views.PizzeriaRetrieveAPIView.as_view(), name='pizzeria_detail'),
     path('update/<int:id>/', views.PizzeriaRetrieveUpdateAPIView.as_view(), name='pizzeria_update'),
     path('delete/<int:id>/', views.PizzeriaDestroyAPIView.as_view(), name='pizzeria_delete'),
     path('create/', views.PizzeriaCreateAPIView.as_view(), name='pizzeria_create'),
